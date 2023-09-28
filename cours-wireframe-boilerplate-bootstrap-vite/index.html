@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Integration</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+  <nav class="navBurger">
+    <ul>
+      <li>
+        <p class="title">
+          Random <br> Website
+        </p>
+      </li>
+      <li>
+          <span>
+            <img src="/assets/images/Vectorcisors.png" alt="">
+          </span>
+        <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+        <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+        <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+        <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+        <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+        <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+      </li>
+      <li id="burgerMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+      </li>
+    </ul>
+  </nav>
+    <nav>
+      <ul>
+        <li>
+          <p class="title">
+            Random <br> Website
+          </p>
+        </li>
+        <li>
+          <span>
+            <img src="/assets/images/Vectorcisors.png" alt="">
+          </span>
+          <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+          <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+          <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+          <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+          <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+          <span><img src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+        </li>
+        <li>
+          <a href="#">Accueil</a>
+        </li>
+        <li>
+          <a href="#">Trouver un livre</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <button>Se connecter</button>
+        </li>
+      </ul>
+    </nav>
+    <section class="backgroundLivre">
+      <h1>Trouvez n'importe quel livre aléatoirement !</h1>
+    </section>
+    <main>
+      <section class="form">
+        <h2 class="m-5">
+          Si vous avez des préférences vous pouvez filtrer les résultats grâce
+          <br>
+          au formulaire ci dessous, sinon laissez faire l’alétoire !
+        </h2>
+        <form action="/">
+          <div class="container">
+            <div class="row gap-5">
+              <div class="col-md-12 position-relative">
+                <label for="inputState">Le genre</label>
+                <select id="inputState" class="form-control rounded-0">
+                  <option selected>Indifférent</option>
+                  <option>Roman</option>
+                  <option>Conte</option>
+                  <option>Roman Policier</option>
+                  <option>Manga</option>
+                </select>
+                <span class="position-absolute form-icon">
+<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>                  </span>
+              </div>
+              <div class="col-12 position-relative">
+                <label for="author">L'auteur</label>
+                <input type="text" class="form-control rounded-0" id="author" placeholder="Indifférent">
+                <span class="position-absolute form-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </span>
+              </div>
+              <div class="col-12">
+                <p>Date de parution</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="releaseDate" id="DateAvant">
+                        <label class="form-check-label" for="DateAvant">
+                          Avant le
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="releaseDate" id="DateApres">
+                        <label class="form-check-label" for="DateApres">
+                          Après le
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check border-0 bg-light-grey p-1" type="date">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <p>Best-Seller</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="bestSeller" id="Oui">
+                        <label class="form-check-label" for="Oui">
+                          Oui
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="bestSeller" id="Non">
+                        <label class="form-check-label" for="Non">
+                          Non
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="bestSeller" id="Indifférent" checked>
+                        <label class="form-check-label" for="Indifférent">
+                          Indifférent
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 row">
+                <p>Prix</p>
+                <div class="col-3">
+                  <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <label for="minPrice" class="col-form-label">Min: </label>
+                    </div>
+                    <div class="col-auto">
+                      <input type="number" id="minPrice" class="form-control rounded-0" aria-describedby="passwordHelpInline">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <label for="maxPrice" class="col-form-label">Max: </label>
+                    </div>
+                    <div class="col-auto">
+                      <input type="number" id="maxPrice" class="form-control rounded-0" aria-describedby="passwordHelpInline">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <button type="submit" class="btn btnTrouverLivre">Trouver un livre</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="info">
+        <h2>Le saviez-vous ?</h2>
+        <article>
+          <div class="thumbnail">
+            <img class="trombonne" src="/assets/images/trombonne.png">
+          </div>
+          <p class="fontInfo">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis delectus distinctio error esse eum exercitationem laboriosam laudantium maxime minima necessitatibus nostrum officiis possimus provident quaerat qui quia, quis repudiandae, saepe sapiente, sed soluta ut vel! Amet aperiam ducimus, enim labore magni maxime neque perferendis possimus quis repudiandae temporibus, veritatis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto blanditiis delectus eaque et eum fuga quia, quisquam repellat saepe.
+            <button class="fontInfo">
+              En savoir plus
+            </button>
+          </p>
+
+        </article>
+        <article>
+          <div class="thumbnail">
+            <img class="trombonne" src="/assets/images/trombonne.png" alt="">
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi eius ipsum laboriosam laudantium libero magni natus nobis optio, perspiciatis quod repudiandae soluta voluptas? Ipsam nisi omnis quod sapiente voluptate!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto blanditiis delectus eaque et eum fuga quia, quisquam repellat saepe.
+            <button>
+              En savoir plus
+            </button>
+          </p>
+        </article>
+      </section>
+    </main>
+    <section class="suggestions">
+      <div class="container w-suggestions">
+        <div class="row">
+          <h2 class="col-12 m-4">Quelques idées de livres</h2>
+          <div class="col-12 row gap-md-5 gap-sm-1 d-flex justify-content-center">
+            <article class="col-md-2 col-sm-6 position-relative">
+              <div class="position-absolute">
+                <h3>Titre</h3>
+                <p>Description</p>
+              </div>
+            </article>
+            <article class="col-md-2 col-sm-6 position-relative">
+              <div class="position-absolute">
+                <h3>Titre</h3>
+                <p>Description</p>
+              </div>
+            </article>
+            <article class="col-md-2 col-sm-6 position-relative">
+              <div class="position-absolute">
+                <h3>Titre</h3>
+                <p>Description</p>
+              </div>
+            </article>
+            <article class="col-md-2 col-sm-6 position-relative">
+              <div class="position-absolute">
+                <h3>Titre</h3>
+                <p>Description</p>
+              </div>
+            </article>
+            <article class="col-md-2 col-sm-6 position-relative">
+              <div class="position-absolute">
+                <h3>Titre</h3>
+                <p>Description</p>
+              </div>
+            </article>
+            <article class="col-md-2 col-sm-6 position-relative">
+              <div class="position-absolute">
+                <h3>Titre</h3>
+                <p>Description</p>
+              </div>
+            </article>
+            <article class="col-md-2 col-sm-6 position-relative">
+              <div class="position-absolute">
+                <h3>Titre</h3>
+                <p>Description</p>
+              </div>
+            </article>
+            <article class="col-md-2 col-sm-6 position-relative">
+              <div class="position-absolute">
+                <h3>Titre</h3>
+                <p>Description</p>
+              </div>
+            </article>
+            <article class="col-md-2 col-sm-6 position-relative">
+              <div class="position-absolute">
+                <h3>Titre</h3>
+                <p>Description</p>
+              </div>
+            </article>
+            <article class="col-md-2 col-sm-6 position-relative">
+              <div class="position-absolute">
+                <h3>Titre</h3>
+                <p>Description</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="callToAction mt-5 bg-secondary text-white p-5">
+      <h2 class="text-center mb-5">
+        Abonnez-vous à notre NewsLetter pour savoir quand nous
+        avons de nouveaux arrivages de livres !
+      </h2>
+      <div class="container-fluid customHeight">
+        <form class="d-flex row h-100" action="">
+          <label class=" customGrid text-center col-md-2 col-sm-3 fs-4" for="CTA">Email</label>
+          <div class="d-flex justify-content-center align-items-center h-100 col-md-6 col-sm-9">
+            <input class="customInput" type="text" name="CTA" id="CTA" placeholder="Inscrivez votre email ici">
+          </div>
+          <button class=" customGrid bg-primary h-100 text-white border-0 col-md-2 col-sm-5 offset-md-0 offset-sm-2 fs-4">S'abonner</button>
+          <a class=" customGrid col-md-2 col-sm-5 text-white" href="#">Plus d'informations</a>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-primary">
+      <section class="container-fluid">
+        <div class="row">
+          <ul class="d-flex col-md-6 col-sm-12 text-white justify-content-between">
+            <li><a class="text-white" href="#">Conditions générales d'utilisations</a></li>
+            <li><a class="text-white" href="#">RGPD</a></li>
+            <li><a class="text-white" href="#">Cookies</a></li>
+            <li><a class="text-white" href="#">Trouver un livre</a></li>
+          </ul>
+          <div class="col-md-3 col-sm-12 offset-md-3 offset-sm-0">
+            <ul class="d-flex justify-content-between">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#FFFFFF}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#FFFFFF}</style><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#FFFFFF}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 customOverFlow">
+              <span>
+                <img class="customRotate" src="/assets/images/Vectorcisors.png" alt="">
+              </span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+            <span><img class="customRotate" src="/assets/images/fluent_line-24-filledcutline.png" alt=""></span>
+          </div>
+        </div>
+      </section>
+      <p class="copyright text-white fs-4">
+        ©Random Website - All rights reserved
+      </p>
+    </footer>
+    
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
